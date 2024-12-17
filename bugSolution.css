@@ -1,0 +1,20 @@
+/* bugSolution.css */
+#container {
+  width: calc(100% - 10px); /* Correct: Units specified for all values */
+}
+
+/*Handle potential unit mismatches */
+#element {
+  width: calc(50% - 2em);
+  /* Ensure consistency, consider conversion if necessary */
+}
+
+/* Avoid complex calculations that might become hard to debug*/
+#complexElement {
+  width: calc( (100vw - 20px) / 2 );
+  /* Use parenthesis for better readability and explicit calculation order */
+}
+/*Example of adding unit to the calc function */
+#anotherElement {
+  width: calc(100% - 10px);
+}
